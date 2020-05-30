@@ -1,0 +1,65 @@
+body {
+    background-color: plum;
+}
+
+#puzzle{
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 50%;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 166px;
+    width: 32.9%;
+    font-size: 72px;
+    text-align: center;
+    position: relative;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}
+
+#empty-tile{
+    background-color: black;
+}
+
+#complete{
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    height: 30px;
+    font-size: large;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+#message{
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: -50%;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+}
