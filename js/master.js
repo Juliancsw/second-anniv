@@ -185,7 +185,7 @@ function checkSecret(){
             break;
         case 14:
             clearInterval(interval);
-            message = "(ne) Oh, you are getting good. Sixth last row, first letter (small case)"
+            message = "(ne) Oh, you are getting good. Sixth last row, first letter, fourth word (small case)"
             answer = prompt(message)
             while(answer != "d"){
                 answer = prompt("Oops that was incorrect, please try again. " + message)
@@ -212,7 +212,7 @@ function checkSecret(){
             checkSecret();
             break;
         case 17:
-            message = "(nedra) Last one till your secret message! Eighth letter of the ninth row! (small case)"
+            message = "(nedra) Last one till your secret message! Tenth letter of the ninth row! (small case)"
             answer = prompt(message)
             while(answer != "g"){
                 answer = prompt("Oops that was incorrect, please try again. " + message)
