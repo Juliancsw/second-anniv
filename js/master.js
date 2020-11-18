@@ -69,7 +69,7 @@ function checkComplete(){
             }
         }
     }
-    helper=true;
+    
     if(helper){
         fixed = true;
         for(var i = 0; i < divs.length; i++) {
