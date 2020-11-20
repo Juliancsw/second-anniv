@@ -170,6 +170,24 @@ function checkSecret(){
             }
             break;
         case 12:
+            message = "Where did we first meet? Future _ _ _ _ _ _ _? (small case)"
+            answer = prompt(message)
+            while(answer != "henesys"){
+                answer = prompt("Oops that was incorrect, please try again. " + message)
+            }
+            secret++;
+            checkSecret();
+            break;
+        case 13:
+            message = "Me: Will you be my girlfriend? You: _ _ ! (small case)"
+            answer = prompt(message)
+            while(answer != "hi"){
+                answer = prompt("Oops that was incorrect, please try again. " + message)
+            }
+            secret++;
+            checkSecret();
+            break;
+        case 14:
             message = "Find the last letter of the fifth word of row 11 in the paragraph (small case)"
             answer = prompt(message)
             while(answer != "n"){
@@ -178,12 +196,12 @@ function checkSecret(){
             secret++;
             checkSecret();
             break;
-        case 13:
+        case 15:
             message = "(n) Wow you've gotten this far. Find the sixth letter of the fifth last word of the fifth last row and click it (close this box first)"
             alert(message);
             interval = setInterval(function(){alert("Oops you took too long, please try again. " + message);},15000);
             break;
-        case 14:
+        case 16:
             clearInterval(interval);
             message = "(ne) Oh, you are getting good. Sixth last row, first letter, fourth word (small case)"
             answer = prompt(message)
@@ -193,7 +211,7 @@ function checkSecret(){
             secret++;
             checkSecret();
             break;
-        case 15:
+        case 17:
             message = "(ned) Don't go quitting on me now, you are almost there! 18th letter of the alphabet! (small case)"
             answer = prompt(message)
             while(answer != "r"){
@@ -202,7 +220,7 @@ function checkSecret(){
             secret++;
             checkSecret();
             break;
-        case 16:
+        case 18:
             message = "(nedr) Good job! Sixth word of first row (small case)"
             answer = prompt(message)
             while(answer != "a"){
@@ -211,7 +229,7 @@ function checkSecret(){
             secret++;
             checkSecret();
             break;
-        case 17:
+        case 19:
             message = "(nedra) Last one till your secret message! Tenth letter of the ninth row! (small case)"
             answer = prompt(message)
             while(answer != "g"){
@@ -220,8 +238,8 @@ function checkSecret(){
             secret++;
             checkSecret();
             break;
-        case 18:
-            message = "Congratulations! Your secret message is (nedrag), read it backwards and meet me there :)"
+        case 20:
+            message = "Congratulations! Your secret message is (nedrag), unscramble it and meet me there :)"
             alert(message);
             interval = setInterval(function(){alert(message);},5000);
             break;
